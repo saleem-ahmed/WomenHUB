@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    transition: 0.7s;
+}
+/* navbar */
+.navbar {
+    background: #e8e8e8;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 1000;
+}
+.navbar .logo img {
+    width: 160px;
+}
+.navbar .user img {
+    width: 40px;
+    height: 40px;
+}
+.navbar .user a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0px 20px;
+    color: #ffffff;
+}
+.navbar .btn-check:focus + .btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent !important;
+}
+.navbar .dropdown-menu a {
+    text-decoration: none !important;
+    color: #212121 !important;
+    font-size: 12px !important;
+}
+.navbar .dropdown-menu a:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+@media screen and (max-width: 769px) {
+    .navbar .logo img {
+        width: 100px;
+    }
+    .navbar .user img {
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .user a {
+        font-size: 12px;
+    }
+}
+
+/* customer-header */
+.customer-header {
+    background: url(../../customer/img/header-img.jpg), no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 85vh;
+}
+.customer-header h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    color: #ffffff;
+}
+.customer-header p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+}
+@media screen and (max-width: 769px) {
+    .customer-header h1 {
+        font-size: 45px;
+    }
+    .customer-header p {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .customer-header h1 {
+        font-size: 30px;
+    }
+    .customer-header p {
+        font-size: 14px;
+    }
+}
+/* chef */
+.chefs {
+    margin-top: 50px;
+}
+.chefs .after h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+}
+.chefs .after h2 img {
+    width: 190px;
+    margin-top: 25px;
+}
+.chefs .input-group .input-group-text {
+    background-color: transparent;
+    border-right: none !important;
+}
+.chefs .input-group .was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #9f9f9f !important;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: none !important;
+    border-left: none !important;
+}
+.chefs .input-group .was-validated .form-control:invalid,
+.form-control.is-invalid:focus {
+    box-shadow: none !important;
+}
+
+@media screen and (max-width: 769px) {
+    .chefs .after h2 {
+        font-size: 35px;
+    }
+    .chefs .after h2 img {
+        width: 130px;
+    }
+}
+.chefs .cards {
+    background: #e8e8e8;
+    border-radius: 5px;
+    padding: 36px 20px;
+}
+.chefs .cards .profile img {
+    width: 125px;
+    height: 125px;
+}
+.chefs .cards .profile .description {
+    margin-left: 26px;
+}
+.chefs .cards .profile .description h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px !important;
+    color: #212121;
+}
+.chefs .cards .profile .description span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+.chefs .cards p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212121;
+    margin: 10px 0px;
+}
+.chefs .cards .rate button a{
+    text-decoration: none;
+    color: #30e3ca;
+}
+.chefs .cards .rate button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #e8e8e8;
+    border: 2px solid #30e3ca;
+    background-color: #e8e8e8;
+    padding: 7px 30px;
+}
+.chefs .cards .rate button:hover {
+    border: 2px solid #30e3ca;
+    background-color: #30e3ca;
+}
+.chefs .cards .rate button:hover a{
+    color: #fff;
+}
+.chefs .cards .rate .star {
+    margin-left: 73px;
+}
+.chefs .cards .rate .star i {
+    color: #ffd900;
+}
+.chefs .see button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background: #30e3ca;
+    border-radius: 5px;
+    width: 185px;
+    border: 1px solid #30e3ca;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+.chefs .see button:hover {
+    color: #30e3ca;
+    background: #ffffff;
+    border: 1px solid #30e3ca;
+}
+
+.chefs .card {
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+.chefs .card img{
+    /* width: 291px; */
+    height: 159.5px;
+}
+.chefs .card .card-body .card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #30e3ca;
+}
+.chefs .card .card-body .card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    /* color: #ff8f00; */
+}
+.chefs .card .card-body button {
+    border: 2px solid #30e3ca;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 6px 19px;
+    color: #30e3ca;
+}
+.chefs .card .card-body button:hover {
+    border: 2px solid #30e3ca;
+    background-color: #30e3ca;
+    color: #ffffff;
+}
+.chefs .card-s {
+    border: 2px solid #212121;
+    border-radius: 5px;
+    padding: 33px 35px;
+    height: 180px;
+}
+.chefs .card-s:hover {
+    box-shadow: 2px 13px 5px 1px rgba(140, 135, 135, 0.75);
+    -webkit-box-shadow: 2px 13px 5px 1px rgba(140, 135, 135, 0.75);
+    -moz-box-shadow: 2px 13px 5px 1px rgba(140, 135, 135, 0.75);
+}
+.chefs .card-s h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #30e3ca;
+}
+.chefs .card-s p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+/*** Footer ***/
+.footer {
+    color: #999999;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #999999;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #999999;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .copyright a:hover {
+    color: var(--primary);
+}
+
+/* }}}}}}}}}}}}}}}}}}}}}}}} */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+/* signup */
+.signin {
+    padding: 25px 0px;
+    background: #e8e8e8;
+    height: 100%;
+    box-sizing: border-box;
+}
+.signin .form .logo {
+    width: 180px;
+    margin-bottom: 30px;
+}
+.signin .form h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 12px;
+}
+.signin .form p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+}
+.signin .form input {
+    margin: 10px 0px;
+    padding: 13px 20px;
+}
+.signin .form select {
+    margin: 10px 0px;
+    padding: 13px 20px;
+}
+.signin .form a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    color: #1a1a1a;
+}
+.signin .form button {
+    background: #30e3ca;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10x 0px;
+    border: 10px solid #30e3ca;
+    margin: 10px 0px;
+}
+.signin .form button:hover {
+    background: #ffffff;
+    color: #30e3ca;
+    padding: 10px 0px !important;
+    border: 1px solid #30e3ca;
+}
+.signin .form .google img {
+    width: 22px;
+}
+.signin .form .google {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #30e3ca;
+    border-radius: 2px;
+    padding: 10px 0px !important;
+    width: 100%;
+}
+.signin .form .google:hover {
+    border: 1px solid #30e3ca;
+}
+.signin .form p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}
+.signin .form p a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #30e3ca;
+}
+
+/* signup */
+.signup {
+    padding: 10px 0px;
+    background: #e8e8e8;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.signup .form .logo {
+    width: 180px;
+    /* margin-bottom: 30px; */
+}
+.signup .form h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 12px;
+}
+.signup .form p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+}
+.signup .form input {
+    margin: 5px 0px;
+    padding: 5px 20px;
+}
+.signup .form select {
+    margin: 5px 0px;
+    padding: 7px 20px;
+}
+.signup .form a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    color: #1a1a1a;
+}
+.signup .form button {
+    background: #30e3ca;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 7px 20px;
+    border: 1px solid #30e3ca;
+    margin: 5px 0px;
+}
+.signup .form button:hover {
+    background: #ffffff;
+    color: #30e3ca;
+    padding: 10px 0px;
+    border: 1px solid #30e3ca;
+}
+.signup .form .google img {
+    width: 22px;
+}
+.signup .form .google {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #30e3ca;
+    border-radius: 2px;
+    padding: 10px 0px !important;
+    width: 100%;
+}
+.signup .form .google:hover {
+    border: 1px solid #30e3ca;
+}
+.signup .form p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}
+.signup .form p a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #30e3ca;
+}
+/* customer card */
+.customer-card{
+    padding-top: 35px;
+}
+.customer-card .card{
+    margin: 10px 0px;
+    height: 80px;
+}
+.customer-card .card img {
+    width: 110px;
+}
+.customer-card .card .card-body h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+.customer-card .card .card-body p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #ff8f00;
+}
+.customer-card .card i {
+    font-weight: 500;
+    color: #ff8f00;
+}
+.customer-card .bold{
+    font-weight: 700 !important;
+}
+.customer-card button {
+    background: #30e3ca;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 7px 20px;
+    border: 1px solid #30e3ca;
+    margin: 5px 0px;
+}
+.customer-card button:hover{
+    background: #ffffff;
+    color: #30e3ca;
+}
+
+/*    <!-- customr menu section start --> */
+.names{
+    border-bottom: 1px solid black;
+    width: 80px;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #30e3ca;
+}
+.order{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #30e3ca;
+    color: #ffffff;
+    outline: none;
+    border: none;
+
+}
+.menucontainer{
+ padding: 0;
+}
+.bg1{
+    background: url(../chefmenu/item1.png), no-repeat;
+    display: flex;
+    align-items: end;
+}
+.bg2{
+    background: url(../chefmenu/Rectangle\ 2806.png), no-repeat;
+    display: flex;
+    align-items: end;
+}
+.bg3{
+    background: url(../chefmenu/Rectangle\ 2805.png), no-repeat;
+    display: flex;
+    align-items: end;
+}
+.card{
+    /* height: 260px; */
+}
+
+.title{
+    border-bottom: 1px solid #fff;
+
+}
+.addtocard{
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+.add_btn{
+ border: 1px solid #ffffff;
+ padding: 8px 20px;
+ background: transparent;
+ color: #fff;
+ border-radius: 2px;
+}
